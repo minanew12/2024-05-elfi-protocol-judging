@@ -5,9 +5,7 @@ Source: https://github.com/sherlock-audit/2024-05-elfi-protocol-judging/issues/2
 ## Found by 
 mstpr-brainbot
 ## Summary
-Users positions can be opened already liquidated because there are no checks when the position is opened whether the position is liquidatable or not. 
-## Vulnerability Detail
-When users submit their order requests, the requests are never validated to determine if they will be liquidatable immediately. That being said, in very volatile markets or with users' greedy positions, positions(isolated) or accounts(cross) can be liquidated immediately upon opening. 
+Users positions can be opened already liquidated because there are no checks when the position is opened whether the position is liquidatable or not.
 
 **Coded PoC:**
 ```typescript
